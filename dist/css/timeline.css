@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+.timeline-container {
+  padding-top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lineCont {
+  width: 70%;
+  height: 6px;
+  border-radius: 5px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  position:relative;
+}
+#line {
+  background: #a5b3c9;
+  position: relative;
+  height: 6px;
+}
+#span {
+  display: none;
+  width: 70%;
+  margin: auto;
+  margin-top: 25%;
+  text-align: center;
+  color: white;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background: #a5b3c9;
+  border-radius: 15px;
+  position: absolute;
+  top: -7px;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.circle::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  border-radius: 100%;
+  top: 2px;
+  left: 2px;
+  display: none;
+}
+.circle .popupSpan {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  white-space: nowrap;
+  display: inline-block;
+  color: #2c3e50;
+  position: absolute;
+  top: 20px;
+  left: -75px;
+  display: none;
+  transition: all 0.1s ease-out;
+}
+.circle.hover::before, .circle.active::before {
+  display: block;
+}
+.circle.hover .popupSpan, .circle.active .popupSpan {
+  display: block;
+}
+.circle.active .popupSpan {
+  top: -40px;
+}
+#mainCont {
+  width: 50%;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  color: #2c3e50;
+  font-size: 25px;
+  text-align: center;
+  transition: all 0.2s ease-out;
+}
+
+.mainContContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainCont span {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  border-radius: 10px;
+  background: #a5b3c9;
+  box-shadow:  0px 0px 7px 2px rgb(165 179 201);
+}
+#mainCont span.right {
+  left: 200%;
+}
+#mainCont span.center {
+  left: 0% !important;
+}
+#mainCont span.left {
+  left: -200%;
+}
