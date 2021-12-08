@@ -1,6 +1,6 @@
 {
     "title": "Portfolio",
-    "name": "startbootstrap-freelancer",
+    "name": "portfolio",
     "version": "7.0.5",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -31,11 +31,12 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "David Miller (https://davidmiller.io/)"
+        "David Miller",
+        "AnJae O'Loughlin"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-freelancer.git"
+        "url": "https://github.com/anjaeo/portfolio_v2.git"
     },
     "dependencies": {
         "bootstrap": "5.1.3"
