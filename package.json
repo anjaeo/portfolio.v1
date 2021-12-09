@@ -3,25 +3,15 @@
     "name": "portfolio",
     "version": "7.0.5",
     "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
+        "start": "node scripts/start.js",
+        "build": "npm run build:scripts",
+        "build:scripts": "node scripts/render-scripts.js"
     },
     "description": "AnJae's portfolio with Bootstrap.",
     "keywords": [
         "css",
-        "sass",
-        "scss",
         "html",
-        "pug",
-        "responsive",
-        "theme",
-        "template"
+        "responsive"
     ],
     "homepage": "",
     "bugs": {
@@ -48,8 +38,6 @@
         "concurrently": "6.3.0",
         "postcss": "8.3.9",
         "prettier": "2.4.1",
-        "pug": "3.0.2",
-        "sass": "1.43.2",
         "shelljs": "0.8.4",
         "upath": "2.0.1"
     }
