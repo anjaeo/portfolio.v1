@@ -3,9 +3,10 @@
     "name": "portfolio",
     "version": "7.0.5",
     "scripts": {
-        "start": "node scripts/start.js",
+        "start": "node index.js",
         "build": "npm run build:scripts",
-        "build:scripts": "node scripts/render-scripts.js"
+        "build:scripts": "node scripts/render-scripts.js",
+        "test": "node scripts/start.js"
     },
     "description": "AnJae's portfolio with Bootstrap.",
     "keywords": [
@@ -29,7 +30,8 @@
         "url": "https://github.com/anjaeo/portfolio_v2.git"
     },
     "dependencies": {
-        "bootstrap": "5.1.3"
+        "bootstrap": "5.1.3",
+        "express": "^4.17.1"
     },
     "devDependencies": {
         "autoprefixer": "10.3.7",
